@@ -1,0 +1,39 @@
+body {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	background-color: #777;
+	position: relative;
+}
+
+.sidenav {
+	grid-column-start: 1;
+	grid-column-end: 1;
+	height: 100%;
+	width: 20%;
+	min-width: 50px;
+	max-width: 150px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: #111;
+	padding-top: 20px;
+}
+
+.sidenav a {
+	padding: 2.5%;
+	text-decoration: none;
+	font-size: 20px;
+	color: #818181;
+	display: block;
+}
+
+img {
+	width: 100%;
+}
+
+.contents {
+	grid-column-start: 2;
+	grid-column-end: -1;
+	height: 100%;
+	color: white;
+}
